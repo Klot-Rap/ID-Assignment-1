@@ -1,0 +1,212 @@
+/* Home.css */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+}
+
+
+/*header*/
+header {
+
+    background-color: cyan;                             /* is alright to have a back-ground color as if the page loads up slowly you will see the background color first before seeing the image loaded up*/
+    background-image: url("Images/ArtScienceMuseum.jpg");
+    background-size: cover;  /*is to ensure the img fix perfectly to the screen size, hence even if smaller or bigger the image will still be there and not be affected regardless*/
+    background-size: 2000px;                                 /*background size will ensure that it is always a 100% of the width, so if you drag in and drag out the width will never change however as you open up bigger or small the image will focus onto one point becoming further or closer to that point*/
+      
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;    
+}
+
+
+
+.nav_logo{
+    color:rgb(28, 0, 128);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header_logo{
+    position:absolute;
+    top: 50px;
+    left: 50px;
+
+    font-size: 50px; 
+    text-transform: uppercase;
+    color:rgb(22, 21, 21);
+}
+nav{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar*/
+    
+}
+
+nav ul li{                                      /*this is solely to arrange the element in the unordered list in the nav bar*/
+    display:inline-block;
+
+    border:black 2px solid;
+
+    margin:10px;                               /*hence if you want to space them out you can use margin which is outside the mborder to space them out*/
+    /*
+    display:flex;                              //theres no need to display flex again already as the inline block already do that if you do this you will just override the previous display command
+    justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
+    */
+    cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer*/
+}
+
+nav ul li a:hover{               /*this is to show what happen when you hover over them*/
+    color: #008a90;
+}
+
+
+
+/*header nav ul li a{                  /*here you stlye all anchor elements 
+    text-decoration: none;
+    /*padding: 6px;
+    color:white; 
+    border-radius: 30px;        /* this is so when you hover to the anchor elements within header the button will be ovul, not squrish
+}*/
+
+header div{
+    color: black;
+}
+
+.Standalone_descriptions{
+    background-color: rgb(37, 63, 63);
+    color: white;
+    width:250px;
+    height:400px;
+
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    padding: 20px; /*this is so the words are not not very near to the border*/
+}
+
+
+.YenImage{
+    position:absolute;
+    bottom: 0;
+    right:100px;
+
+    width:333px;
+    height:500px;
+}
+
+
+
+
+/*section*/
+section{
+    background-color: lightsalmon;
+}
+/*section1 features*/
+.section_1{
+    background-color: rgba(19, 19, 146, 0.753);
+
+    display:inline-block;
+    
+    /*
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;          theres no need for this since we used inline blocks
+    text-align: center;*/
+    border: red 10px solid;
+    border-radius: 10px;
+    width: 400px;           /*this is so that we fixed each inline block to a fix width not allowing the words to affect by stretching the inline block*/
+    height: 650px;
+
+    padding: 20px;          /*this is so the border is not stuck to the word*/
+    margin: 0px 50px;         /*this is so to space those inline block not cramped tgt*/
+}
+
+/*.section_1 button{
+    border-radius: 50px;         useless as you are not even accessing the button 
+}*/ 
+
+.LatestProperties{
+    text-align: center;
+    
+}
+
+/*section2*/
+.section_2{
+    background-color: rgba(106, 21, 114, 0.753);
+}
+
+
+
+
+/*section3*/
+.section_3 div{
+    display:inline-block;         /*this is so the map will only occupy the width it require and then the form will also only occupt the width it requires, hence they are also not on different lines because they only take up the line require*/
+    position:static;           /* this is so when the screen becomes smaller the inline block will move on to the next line and not affect the page */
+    margin: 100px;
+}
+
+
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #008a90;
+}
+
+.flex-item{                       /*here is to specifically target the all the flex items together but seprate it with the direction/arrangmet*/
+    background-color: Yellow;   /*here you define the background color for each flex item, so each flex item is has yellow background.*/
+    border: red 3px solid;
+    
+    width: 308px;               /*here you specify the standard width for all boxes, then you can specify all their height and minmium height they must have depending on the content in it*/
+    height: 650px;              /*note i make the width 308 same as the image width so the image can fully fill the flexbox then use the padsding to add equal to all 4 sides of the box*/
+    padding: 20px;              /*this is to make sure the border is not so close to the words(content)*/
+    margin: 30px;               /*this is to ensure that they have spacing among themselves, since they are centered all tgt they need to space out with each other*/
+}
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: aquamarine;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+.fixed_Chatbox{
+    display: inline-block;    /*so it will not ocuppy the space of one entire block*/
+
+    border: black 2px solid; /*this is to give it a border*/
+    border-radius: 10px;        /*this is make the border slightly curly so it will look nice*/
+
+    padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
+
+    background-color: rgb(38, 38, 148);
+    color: white;           /*this is to assign color to the text while background color assign color to the background like the padding*/
+
+
+    position:fixed;          /*so it will fixed along the viewport regardless of  how you scroll*/
+    bottom:30px;             /*note i assign 10px to it so it floats but still fixed*/
+    right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless*/
+}
+
+
+#contact_us_link{
+    transition-duration: 5s;     /*this is so the transition does not immediately brings you location rather it does it slowly, creating a transition effect to bring you there slowly*/
+}/*apparently it does not work at all*/

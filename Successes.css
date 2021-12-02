@@ -1,0 +1,36 @@
+/*Successes.css*/
+
+
+/*Header*/
+header{
+    background-color: blue;
+    background-image: url("Images/apple_mbs.jpg");
+    /*background-size: cover;                         this cover wont work as the height of your header is essentially the heifht you image can occupy hence you must make your image height 100% while covering the page*/
+    
+    /* Full height , so you pre fix the size of the whole header, before you fully cover it with the image by using the value cover in property background size, allowing the image to fit perfectly to the screen regardless of the screen size*/
+    height:1000px;
+
+    /* Center and scale the image nicely */
+    background-position: center;                     /*this focuses on the center of image regardless if you smaller the screen or larger it*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+/*Section 1*/
+.section1{
+    background-color: red;
+}
+
+
+/*Section 2*/
+.section2{
+    background-color: pink;
+}
+
+/*footer*/
+footer{
+    background-color: aquamarine;
+}

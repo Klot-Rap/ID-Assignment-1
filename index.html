@@ -1,0 +1,186 @@
+<!--Page 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="Home.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav_logo">April & Yen REAL ESTATE</a>   <!--using an anchor tag in this case than a divider tag, as an divider tag will span across the whole line-->
+
+            <ul>
+                <li><a href="#">Home</a></li>                      <!--since this hr-ef is assing to this #, it means that it will not travese to any page neither do we want it to traverse to any page as this is the home page-->
+                <li><a href="Online Reservation.html">Online Reservation</a></li>
+                <li><a href="Successes.html">Successes</a></li>    <!--so this will travese(bring us) to the page sucess.html-->
+                <li><a href="#contact_us_link">Contact us</a></li>        <!--hert is wrongly spelled is href, which allows us to traverse to anotther page so initially we assing it to "#" as we are not traversing to another page but if you want you can assing it another value and put in the name of the .html-->
+            </ul>            <!--to href reference to an ID which is used when you want to place an anchor using ID for you to access it from the page-->
+        </nav>
+
+        <div class="header_logo">April & Yen Real Estate</div>
+
+        <img src="Images\Yen2_edited.png" alt="April PropNex Agent" class="YenImage"/>
+
+        
+    </header>
+
+    <div class="Standalone_descriptions">STUNNING 6 BED
+        HOUSE IN THE HEART
+        OF THE CITY (Forett)
+        Your legacy awaits at Forett, the defining freehold development of Bukit Timah boasting 633 premium units ranging from 1-5 bedrooms. 
+        Derived from “le foret” in French, which translates to “forest”, nature at Forett is abundant. 
+        Stay at the nexus of legendary foodie hot spots, modern MRTs, prestigious schools and island-wide connectivity.
+        <hr>$2,000,000
+        <button>All Sales</button>
+    </div>
+
+    <section class="sect1">
+
+    </section>
+
+    <section class="sect2">
+
+    </section>
+    
+    <section class="sect3">
+
+    </section>
+
+    <section class= "features">
+        <h3 class="LatestProperties">LATEST PROPERTIES FOR SALE </h3>
+
+        <div class="flex-container">                      <!--a container where our fexbox items will reside in -->
+            <div class="flex-item flex-item1"><img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" width = 308px height= 333px /></div>       <!--here you assign it to two separate class so you are able to access it individually as well-->
+            <div class="flex-item flex-item2"><img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" width = 308px height= 333px/></div>        <!-- the purpose is flex-item can access all the items at once whereas container will access the whole block of column hence they are two different things (one is just taking care of all the container) (the other is to take care of the whole row)-->
+            <div class="flex-item flex-item3"><img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" width = 308px height= 333px/></div>
+        </div>
+        
+
+
+        <figure class= "section_1"> <!--an fig tag requries two things an img tag and a fig caption tag --><!--essentially like a HTML 5 semantic tag like header and nav which does not do anything much-->
+            <img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" height= 500px width = 350px/>
+            <figcaption>Tree House $1,200,000
+                At Tree House, your first glimpse will be the expansive vertical green wall. 
+                More than just a unique architectural structure. 
+                A natural insulation, its primary function is to serve as a vertical green lung and reduce the estate’s carbon footprint by filtering pollutants and carbon dioxide out of the air. 
+                
+                With all these fantastic eco features in place it’s no wonder that the development has won for itself a prestigious BCA Green Mark Platinum Award!</figcaption>
+                <button>Read More</button>
+        </figure>
+        <figure class= "section_1"> 
+            <img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" height= 400px width = 350px/>
+            <figcaption>Sims Urban Oasis $ 1,989,888
+                A Home to fit your Modern Lifestyle
+
+                Sims Urban Oasis offers four efficient and functional types of dwelling units, 
+                they are the Compact ‘Suites’, Urban ‘LOFT’, ‘Grand’ lifestyle and the Exclusive ‘Deluxe’ units with dual-key options</figcaption>
+                <button>Read More</button>
+        </figure>
+        <figure class= "section_1"> 
+            <img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" height= 400px width = 350px/> 
+            <figcaption>The Quayside $ 2,200,000
+                Step in and discover this unique wonderland of lushness and tranquility, 
+                the cutting edge designed units are your private sanctuary where you can unwind and enjoy the unblocked picturesque skyline with unprecedented privacy. 
+                The apartments are spacious and accompanied with ample nature lighting. 
+
+                You would relish in luxurious warmth every time you return to this dream home.</figcaption>
+                <button>Read More</button>
+        </figure>
+
+        <ul class="section_2">
+            <h3>REALTORS YOU CAN TRUST</h3>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+        <section class="section_3">
+            
+            <h3 id="contact_us_link">CONTACT US</h3>
+            <!-- forms for user physically get a visualization of our office -->
+            <div>
+                <h4>Address</h4>
+                <h5>480 Lorong 6 Toa Payoh HDB HUB East Wing #10-01 Singapore 31048</h5>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7392816500105!2d103.84678161394865!3d1.3325679620039057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1766c2e7005f%3A0xa38883841005c882!2sHDB%20Hub%20West%20Wing!5e0!3m2!1sen!2ssg!4v1638160038536!5m2!1sen!2ssg" 
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!--Embedding a google map code-->
+            </div>
+
+            <!-- forms for user to contact us -->
+            <div>
+                <h4>ALTERNATIVELY YOU CAN FILL IN THE FOLLOWING CONTACT FORM: </h4>
+                <form action="">
+                    <!-- <label for= "Name">Name: </label> -->
+                    <input type="text" placeholder="Name to address by" required><br>
+                    
+                    <!-- <label for= "Personal Email">Email: </label> -->
+                    <input type="email" placeholder="Email" required><br>
+
+                    <!-- <label for= "Regarding what matter">Subject: </label> -->
+                    <input type="text" placeholder="Subject" required><br>
+
+                    <!--<label for= "Additional Specifications">Additional Specifications: </label> -->
+                    <input type="text area" placeholder="Message" required><br>
+                    
+                    
+                    <!-- Additional forms i can include-->
+                    <h5>Avaliable session time</h5>
+                    <input type="radio" required>
+                    <label for= "Session slot 1, 9 to 11am">Session 1(9-11am) </label>
+                    <br>
+                    <input type="radio" required>
+                    <label for= "Session slot 2, 12 to 2pm">Session 2(12-2pm) </label>
+                    <br>
+                    <input type="radio" required>
+                    <label for= "Session slot 3, 3 to 5pm">Session 3(3-5pm) </label>
+                    <br>
+                    <input type="radio" required>
+                    <label for= "Session slot 4, 7 to 9pm">Session 4(7-9pm) </label>
+                    <br>
+                                
+                    <!--
+                    <input type="checkbox" required>
+                    <label for= "Form of Payment">Bank of China </label><br>
+                    -->
+                    <input type="submit" required>
+                </form>
+
+            </div>
+
+
+        </section>
+        
+
+    </section>
+    
+
+    <footer>
+        <a>© 2023 by April & Yen Real Estate.</a>
+        
+        <div>
+            <a href="https://www.facebook.com/luiyenyuin" target="_blank">
+                <img  src="Images\facebook icon.png" alt="Facebook HyperLink" height= "30px" width = "30px"/>
+            </a>               <!--note alt is merely for description hence those who cannot see are able to use an applicaiton to read what the images is-->
+
+            <a href="https://sg.linkedin.com/in/yen-yuin-lui-828732b?trk=people-guest_people_search-card" target="_blank">
+                <img href="#" src="Images\linkedin icon.png" alt="Linkedin HyperLink" height= "30px" width = "30px"/>           <!--therefore alt tag is for two reason one being for the visually impared to use app to read over the imgs, other is to-->
+            </a>
+            <a href="https://www.instagram.com/aprillui9/?hl=en" target="_blank">
+                <img href="#" src="Images\instagram icon.png" alt="Instagram HyperLink" height= "30px" width = "30px"/>           <!--allow google and search engine to properly index your page such that theres not alot of words for google to pick up on rather just the images so when ppl search they can scan through your website and present yours, essentially easier to show up on search engines-->
+            </a>
+            <!--i also added the height and width arguments(aka attributes) to make the image smaller-->
+        </div>  <!--i use the div tag here so all the icon can stay tgt and i do not have to self align each of them-->
+
+        <!--note that href (hyper reference) has to be placed directly in an anchor tag to be able to work, and if you want the page to be able to open up on another page you simply use target="_blank" -->
+    </footer>
+
+    <div class="fixed_Chatbox">CHAT WITH US</div>
+</body>
+</html>

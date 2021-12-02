@@ -1,0 +1,83 @@
+/*Online Reservation css*/
+
+body{
+    background-image: URL("Images/mountain ranges.png");
+    background-attachment: fixed; /*this is to keep background image fixed(stationary) during scrolling*/
+    background-size: cover; /*this is to Create a Full Height Image in which the full image cover the entire screen without repeating or showing partial of the image and fill up the whole thing while being fixed (by the property above)*/
+
+    
+
+    margin:0px;
+    padding:0px; /*this is so that you can re-define all the padding and margin instead of using the standard one give by the css*/
+}
+
+/* Note if you use this '*' selector symbol it will override everything of the page and make edit of the html using all the css inside of here and additional css will just be extra added in bnut if they share the same property like the background, this will override all background and any background defined here will be the standard backgroun
+*{
+    background-image: URL("Images/mountain ranges.png");
+    background-attachment: fixed; /*this is to keep background image fixed(stationary) during scrolling
+    background-size: cover; /*this is to Create a Full Height Image in which the full image cover the entire screen without repeating or showing partial of the image and fill up the whole thing while being fixed (by the property above)
+
+    
+
+    margin:0px;
+    padding:0px; /*this is so that you can re-define all the padding and margin instead of using the standard one give by the css
+}*/
+
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  /*this is to center the items along the x-axis as the flex direction has switched*/
+
+    background-color: none;
+}
+
+.flex-item{
+    background-color: rgba(204, 2, 255, 0.7); /*now you are modifying the actual background color of the flex boxes, just now you were modifying the background color of the section*/
+    /*note that the background color will be overriden by the * selector where you put the img as default for all background*/
+    border: black 5px solid; /*this is the three values you can pass in for this parameter for the border properties*/
+
+
+    width: 800px;
+    height:250px; /*this is to assign a value to the size of each flex box*/
+
+    padding: 20px; /*this is to remove the border from being to close to the words making the words like sticking to the border*/
+    margin:40px; /*this is to add spacing to all the margin around the flex box to ensure they are not sticking tgt*/
+
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: aquamarine;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+/*fixed chat box at the side*/
+.fixed_Chatbox{
+    display: inline-block;    /*so it will not ocuppy the space of one entire block*/
+
+    border: black 2px solid; /*this is to give it a border*/
+    border-radius: 10px;        /*this is make the border slightly curly so it will look nice*/
+
+    padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
+
+    background-color: rgb(38, 38, 148);
+    color: white;           /*this is to assign color to the text while background color assign color to the background like the padding*/
+
+
+    position:fixed;          /*so it will fixed along the viewport regardless of  how you scroll*/
+    bottom:30px;             /*note i assign 10px to it so it floats but still fixed*/
+    right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless*/
+}
+
+
+
