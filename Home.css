@@ -12,7 +12,7 @@ body{
 header {
 
     background-color: cyan;                             /* is alright to have a back-ground color as if the page loads up slowly you will see the background color first before seeing the image loaded up*/
-    background-image: url("Images/ArtScienceMuseum.jpg");
+    background-image: url("Images/ArtScienceMuseum.jpg");  /*you use url instead of putting it in html and then using the relative path, is because you want to be able to style, to provide i as a background, hence only CSS can style the background hence i put it as a URL instead
     background-size: cover;  /*is to ensure the img fix perfectly to the screen size, hence even if smaller or bigger the image will still be there and not be affected regardless*/
     background-size: 2000px;                                 /*background size will ensure that it is always a 100% of the width, so if you drag in and drag out the width will never change however as you open up bigger or small the image will focus onto one point becoming further or closer to that point*/
       
@@ -27,19 +27,52 @@ header {
     color:rgb(28, 0, 128);
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    
+    margin: 20px;  /*to center it by pushing it to have 20px all around everywhere*/
+}
+
+.WhatsApp_logo{
+    margin: 10px;  /*to center the height by pushing it to have 20px all around everywhere*/
+    /*and then shift the 50px to the right using the second argument of margin*/
+    /*text-decoration: none;    reducees the underline below the link*/
+}
+
+.WhatsApp_logo2{
+    background-color: blue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; /*this is to make the box containing the information have special design such as the corner being slightly rounded instead of it just being a square box*/
+
+    color: white; /*this is the color for the text which is also a hyperlink, if want to remove the underline i can just add text-decoration : none; for the link href*/
+
+    position: absolute; /*position it direcrtly above the yen image*/
+    top:75px;
+    right:200px;
+
+    padding:10px 20px; /*this is to ensure that the text and the image is not sticked to the box's border and make the sides longer*/
+}
+
+.WhatsApp_logo3{
+    margin:0; /*just a useless placeholder*/
+}
+
+
+
+.nav_page_links{
+    margin: 15px;  /*to center it by pushing it to have 20px all around everywhere*/
 }
 
 .header_logo{
     position:absolute;
-    top: 50px;
+    top: 100px;
     left: 50px;
 
     font-size: 50px; 
     text-transform: uppercase;
-    color:rgb(22, 21, 21);
+    color:#ffffff;
+    
 }
 nav{
     background-color: lightblue;
@@ -62,7 +95,7 @@ nav ul li{                                      /*this is solely to arrange the 
     cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer*/
 }
 
-nav ul li a:hover{               /*this is to show what happen when you hover over them*/
+nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across*/
     color: #008a90;
 }
 
@@ -89,12 +122,17 @@ header div{
     border-top-left-radius: 20px;
 
     padding: 20px; /*this is so the words are not not very near to the border*/
+
+    z-index: 1; /*to overlap the two pages header and section without taking up additional space*/
+    position: absolute;
+    top: 575px;
+    left: 50px
 }
 
 
 .YenImage{
     position:absolute;
-    bottom: 0;
+    bottom:0;             /*this is to stick to the bottom of the border*/
     right:100px;
 
     width:333px;
@@ -134,7 +172,9 @@ section{
 
 .LatestProperties{
     text-align: center;
-    
+    background-color: #008a90;
+
+    padding-top: 200px;      /*this is to make sure to push it the content down, but note you can actually use margin too, although margin technically is the correct term to use to push tit down using the space outside of the bex, however you want the space to still contain the color and not push the whole section down by 200px and the z-index for the para will be useless hence this is used to add padding to the content will still pusing it down*/
 }
 
 /*section2*/
@@ -176,6 +216,7 @@ section{
 
 
 
+
 /*footer*/
 footer{
     background-color: aquamarine;
@@ -192,7 +233,7 @@ footer{
 .fixed_Chatbox{
     display: inline-block;    /*so it will not ocuppy the space of one entire block*/
 
-    border: black 2px solid; /*this is to give it a border*/
+    border: black 4px solid; /*this is to give it a border*/
     border-radius: 10px;        /*this is make the border slightly curly so it will look nice*/
 
     padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
@@ -210,3 +251,8 @@ footer{
 #contact_us_link{
     transition-duration: 5s;     /*this is so the transition does not immediately brings you location rather it does it slowly, creating a transition effect to bring you there slowly*/
 }/*apparently it does not work at all*/
+
+
+@media screen {
+    
+}
