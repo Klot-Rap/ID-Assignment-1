@@ -115,6 +115,11 @@ header{
     background-color: rgba(250, 8, 8, 0.322);
 }
 
+@media screen and (max-width:1550px){     /*hence once it goes below 1550 it will execute the statment but if it never, it will use the deafult styling you give*/
+    .flex_item3_cert{
+        display:none;
+    }
+} 
 
 
 
