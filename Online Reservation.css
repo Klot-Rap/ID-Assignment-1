@@ -41,10 +41,14 @@ body{
     width: 800px;
     height:250px; /*this is to assign a value to the size of each flex box*/
 
-    padding: 20px 20px 20px 5px; /*this is to remove the border from being to close to the words making the words like sticking to the border, while still making the image abit more close to the border compared to the content*/
+    padding: 20px; /*this is to remove the border from being to close to the words making the words like sticking to the border, while still making the image abit more close to the border compared to the content*/
     margin:40px; /*this is to add spacing to all the margin around the flex box to ensure they are not sticking tgt*/
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 
 
 /* The normalize.css will styles will also override all these style even so if its written

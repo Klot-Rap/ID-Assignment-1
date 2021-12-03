@@ -22,55 +22,16 @@ header {
 }
 
 
-/*NAV COMMON STYLING CAN BE FOUND IN NORMALIZE.CSS
-.nav_logo{   /*logo meaning the words A&Y Real Estate thing
-    color:rgb(28, 0, 128);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    
-    margin: 20px;  /*to center it by pushing it to have 20px all around everywhere
-}
-
-nav{
-    background-color: lightblue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar
-    
-}
-
-nav ul li{                                      /*this is solely to arrange the element in the unordered list in the nav bar
-    display:inline-block;
-
-    border:black 2px solid;
-
-    margin:10px;                               /*hence if you want to space them out you can use margin which is outside the mborder to space them out
-    /*
-    display:flex;                              //theres no need to display flex again already as the inline block already do that if you do this you will just override the previous display command
-    justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
-    
-    cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer
-}
-
-nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across
-    color: #008a90;
-}
-
-.nav_page_links{
-    margin: 15px;  /*to center it by pushing it to have 20px all around everywhere
-}*/
+/*Nav Common logo can be found in Normailize.css*/
 
 
 
-
+/*
 .WhatsApp_logo{
-    margin: 10px;  /*to center the height by pushing it to have 10px all around everywhere*/
-    /*and then shift the 50px to the right using the second argument of margin*/
-    /*text-decoration: none;    reducees the underline below the link*/
-}
+    margin: 10px;  /*to center the height by pushing it to have 10px all around everywhere
+    /*and then shift the 50px to the right using the second argument of margin
+    /*text-decoration: none;    reducees the underline below the link
+}*/
 
 .WhatsApp_logo2{
     background-color: blue;
@@ -126,7 +87,7 @@ header div{
 
     z-index: 1; /*to overlap the two pages header and section without taking up additional space*/
     position: absolute;
-    top: 575px;
+    top: 525px;
     left: 50px
 }
 
@@ -148,28 +109,7 @@ section{
     background-color: lightsalmon;
 }
 /*section1 features*/
-.section_1{
-    background-color: rgba(19, 19, 146, 0.753);
 
-    display:inline-block;
-    
-    /*
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;          theres no need for this since we used inline blocks
-    text-align: center;*/
-    border: red 10px solid;
-    border-radius: 10px;
-    width: 400px;           /*this is so that we fixed each inline block to a fix width not allowing the words to affect by stretching the inline block*/
-    height: 650px;
-
-    padding: 20px;          /*this is so the border is not stuck to the word*/
-    margin: 0px 50px;         /*this is so to space those inline block not cramped tgt*/
-}
-
-/*.section_1 button{
-    border-radius: 50px;         useless as you are not even accessing the button 
-}*/ 
 
 .LatestProperties{
     text-align: center;
@@ -194,7 +134,7 @@ section{
 }
 
 
-
+/*new section*/
 .flex-container{
     display:flex;
     flex-direction: row;
@@ -211,14 +151,14 @@ section{
     height: 650px;              /*note i make the width 308 same as the image width so the image can fully fill the flexbox then use the padsding to add equal to all 4 sides of the box*/
     padding: 20px;              /*this is to make sure the border is not so close to the words(content)*/
     margin: 30px;               /*this is to ensure that they have spacing among themselves, since they are centered all tgt they need to space out with each other*/
+
+
 }
 
 
-
-
-
-
-
+.Read_more_buttons{
+    position:static;
+}
 
 
 

@@ -65,14 +65,14 @@ header{
     text-align: center;
 
     margin-top: -20px;
-    margin-bottom: 100px; /*this is to push it from the top title and push the reviews down and create a spacing of all 30px all around it*/
+    margin-bottom: 50px; /*this is to push it from the top title and push the reviews down and create a spacing of all 30px all around it*/
     padding-top: 50px;
     color: white;
 }
 
 /*SECTION*/
 .section1{
-    background-color: darkblue;
+    background-color: rgb(28, 28, 235);
 }
 
 
@@ -85,19 +85,45 @@ header{
 .flex_item_cert{       /*this is properties meant for all the items*/
     width:800px;
     height:250px;
-    background-color: pink;
+    background-color: rgba(250, 184, 195, 0.514);
 
     margin: 20px;  /*this is to ensure not all items/element is sticked tgt*/
 }
 .flex_item1_cert{    /*this is specific properties meant for the first flex item*/
     height: 800px;
-    background-color: red;
+    background-color: rgba(250, 8, 8, 0.514);
+
+    color:#ffffff;
+    text-align: center;
 }
+
+
+.flex_item2_cert{    /*this is specific properties meant for the first flex item*/
+    color:#ffffff;
+    text-align: center;
+}
+
+
+.flex_item3_cert{
+    width:100%;
+    height: 500px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
 
 
 /*Section 2*/
 .section2{
-    background-color: rgb(99, 91, 92);
+    background-color: rgb(186, 89, 241);
 }
 
 .WhatsApp_logo{

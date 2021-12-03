@@ -17,7 +17,7 @@
         <nav>
             <a class="nav_logo">April & Yen REAL ESTATE</a>   <!--using an anchor tag in this case than a divider tag, as an divider tag will span across the whole line-->
 
-            <a class="WhatsApp_logo" href="https://api.whatsapp.com/send?phone=6597460258&text=Hi,%20I%20am%20interested%20in%20the%20properties."><img src="Images\WhatsApp Icon.png" alt="WhatsApp Link" height=50px width=50px target="_blank"/> Whatsapp Me</a>    <!--note here i have the anchor tag to surround the img tag with a link href so when you click on it i can link to the href-->
+            <!--<a class="WhatsApp_logo" href="https://api.whatsapp.com/send?phone=6597460258&text=Hi,%20I%20am%20interested%20in%20the%20properties."><img src="Images\WhatsApp Icon.png" alt="WhatsApp Link" height=50px width=50px target="_blank"/> Whatsapp Me</a> -->   <!--note here i have the anchor tag to surround the img tag with a link href so when you click on it i can link to the href-->
 
             <ul class="nav_page_links">
                 <li><a href="#">Home</a></li>                      <!--since this hr-ef is assing to this #, it means that it will not travese to any page neither do we want it to traverse to any page as this is the home page-->
@@ -37,14 +37,16 @@
         
     </header>
 
-    <div class="Standalone_descriptions">STUNNING 6 BED
-        HOUSE IN THE HEARTd development of Bukit Timah boasting 633 premium units ranging from 1-5 bedrooms. 
-        Derived from “le foret” in French, which translates 
-        OF THE CITY (Forett)
-        Your legacy awaits at Forett, the defining freeholto “forest”, nature at Forett is abundant. 
-        Stay at the nexus of legendary foodie hot spots, modern MRTs, prestigious schools and island-wide connectivity.
-        <hr>$2,000,000
-        <button>All Sales</button>
+    <div class="Standalone_descriptions">
+        <h3>STUNNING 6 BED</h3><br><br>
+        <P>
+            House in the heart development of Bukit Timah boasting 633 premium units ranging from 1-5 bedrooms. 
+            Derived from “le foret” in French, which translates OF THE CITY (Forett)
+            Your legacy awaits at Forett, the defining freeholto “forest”, nature at Forett is abundant. 
+            Stay at the nexus of legendary foodie hot spots, modern MRTs, prestigious schools and island-wide connectivity.
+            <hr><br>$2,000,000
+        </P><br>
+        <a><button>All Sales</button></a>
     </div>
 
 
@@ -65,42 +67,53 @@
         <h2 class="LatestProperties">LATEST PROPERTIES FOR SALE </h2>
 
         <div class="flex-container">                      <!--a container where our fexbox items will reside in -->
-            <div class="flex-item flex-item1"><img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" width = 308px height= 333px /></div>       <!--here you assign it to two separate class so you are able to access it individually as well-->
-            <div class="flex-item flex-item2"><img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" width = 308px height= 333px/></div>        <!-- the purpose is flex-item can access all the items at once whereas container will access the whole block of column hence they are two different things (one is just taking care of all the container) (the other is to take care of the whole row)-->
-            <div class="flex-item flex-item3"><img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" width = 308px height= 333px/></div>
+            <div class="flex-item flex-item1">
+                <img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" width = 308px height= 333px />
+
+                <p>
+                    <strong>Tree House $1,200,000</strong><br><br>
+                    At Tree House, your first glimpse will be the expansive vertical green wall.More than just a unique architectural structure. 
+                    A natural insulation, its primary function is to serve as a vertical green lung and reduce the estate’s carbon footprint by filtering pollutants and carbon dioxide out of the air. 
+                    <br><br>With all these fantastic eco features in place it’s no wonder that the development has won for itself a prestigious BCA Green Mark Platinum Award!
+                </p><br><br>
+
+                <a class="Read_more_buttons"><button>Read More</button></a>
+
+            </div>       <!--here you assign it to two separate class so you are able to access it individually as well-->
+            
+
+            <div class="flex-item flex-item2">
+                <img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" width = 308px height= 333px/>
+
+                <p>
+                    <strong>Sims Urban Oasis $ 1,989,888</strong><br><br>
+                    A Home to fit your Modern Lifestyle<br><br>Sims Urban Oasis offers four efficient and functional types of dwelling units, 
+                    they are the Compact ‘Suites’, Urban ‘LOFT’, ‘Grand’ lifestyle and the Exclusive ‘Deluxe’ units with dual-key options.
+                </p><br><br>
+
+                <a class="Read_more_buttons"><button>Read More</button></a>
+
+            </div>        <!-- the purpose is flex-item can access all the items at once whereas container will access the whole block of column hence they are two different things (one is just taking care of all the container) (the other is to take care of the whole row)-->
+            
+
+            <div class="flex-item flex-item3">
+                <img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" width = 308px height= 333px/>
+
+                <p>
+                    <strong>The Quayside $ 2,200,000</strong><br><br>
+                    Step in and discover this unique wonderland of lushness and tranquility, the cutting edge designed units are your private sanctuary where you can unwind 
+                    and enjoy the unblocked picturesque skyline with unprecedented privacy. The apartments are spacious and accompanied with ample nature lighting. 
+                    <br><br>You would relish in luxurious warmth every time you return to this dream home.
+                </p><br><br>
+
+                <a class="Read_more_buttons"><button>Read More</button></a>
+
+            </div>
         </div>
         
 
 
-        <figure class= "section_1"> <!--an fig tag requries two things an img tag and a fig caption tag --><!--essentially like a HTML 5 semantic tag like header and nav which does not do anything much-->
-            <img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" height= 500px width = 350px/>
-            <figcaption>Tree House $1,200,000
-                At Tree House, your first glimpse will be the expansive vertical green wall. 
-                More than just a unique architectural structure. 
-                A natural insulation, its primary function is to serve as a vertical green lung and reduce the estate’s carbon footprint by filtering pollutants and carbon dioxide out of the air. 
-                
-                With all these fantastic eco features in place it’s no wonder that the development has won for itself a prestigious BCA Green Mark Platinum Award!</figcaption>
-                <button>Read More</button>
-        </figure>
-        <figure class= "section_1"> 
-            <img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" height= 400px width = 350px/>
-            <figcaption>Sims Urban Oasis $ 1,989,888
-                A Home to fit your Modern Lifestyle
-
-                Sims Urban Oasis offers four efficient and functional types of dwelling units, 
-                they are the Compact ‘Suites’, Urban ‘LOFT’, ‘Grand’ lifestyle and the Exclusive ‘Deluxe’ units with dual-key options</figcaption>
-                <button>Read More</button>
-        </figure>
-        <figure class= "section_1"> 
-            <img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" height= 400px width = 350px/> 
-            <figcaption>The Quayside $ 2,200,000
-                Step in and discover this unique wonderland of lushness and tranquility, 
-                the cutting edge designed units are your private sanctuary where you can unwind and enjoy the unblocked picturesque skyline with unprecedented privacy. 
-                The apartments are spacious and accompanied with ample nature lighting. 
-
-                You would relish in luxurious warmth every time you return to this dream home.</figcaption>
-                <button>Read More</button>
-        </figure>
+        
 
         <ul class="section_2">
             <h3>REALTORS YOU CAN TRUST</h3>
