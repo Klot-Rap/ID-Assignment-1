@@ -2,7 +2,7 @@
 
 /*Common Navigation bar styles*/
 nav{
-    background-color: lightblue;
+    background-color: #486eb9;
     display: flex;
     flex-direction: row;
     justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar*/
@@ -10,7 +10,7 @@ nav{
 }
 
 .nav_logo{
-    color:rgb(28, 0, 128);
+    color:#ffffff;
     font-weight: 700;
     text-decoration: none;
     font-size: 20px;
@@ -31,14 +31,16 @@ nav ul li{                                      /*this is solely to arrange the 
     justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
     */
     cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer*/
+    text-decoration: none;
 }
 
 nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across*/
-    color: #008a90;
+    color: #db063b;
 }
 
 .nav_page_links{
     margin: 15px;  /*to center it by pushing it to have 20px all around everywhere*/
+    
 }
 
 
@@ -46,7 +48,7 @@ nav ul li a:hover{               /*this is to show a color change when you hover
 
 /*Common footer styles*/
 .common_footer{
-    background-color: aquamarine;
+    background-color: #2B6CA3;
     padding: 20px;         /*this padding is for the background block to extend and fill the screen*/
 
     display: flex;
@@ -68,7 +70,7 @@ nav ul li a:hover{               /*this is to show a color change when you hover
 
     padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
 
-    background-color: rgb(38, 38, 148);
+    background-color: #ff9912;
     color: white;           /*this is to assign color to the text while background color assign color to the background like the padding*/
 
 
@@ -76,3 +78,45 @@ nav ul li a:hover{               /*this is to show a color change when you hover
     bottom:30px;             /*note i assign 10px to it so it floats but still fixed*/
     right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless*/
 }
+
+
+/*NAV COMMON STYLING CAN BE FOUND IN NORMALIZE.CSS
+.nav_logo{   /*logo meaning the words A&Y Real Estate thing
+    color:rgb(28, 0, 128);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    margin: 20px;  /*to center it by pushing it to have 20px all around everywhere
+}
+
+nav{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar
+    
+}
+
+nav ul li{                                      /*this is solely to arrange the element in the unordered list in the nav bar
+    display:inline-block;
+
+    border:black 2px solid;
+
+    margin:10px;                               /*hence if you want to space them out you can use margin which is outside the mborder to space them out
+    /*
+    display:flex;                              //theres no need to display flex again already as the inline block already do that if you do this you will just override the previous display command
+    justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
+    
+    cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer
+}
+
+nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across
+    color: #008a90;
+}
+
+.nav_page_links{
+    margin: 15px;  /*to center it by pushing it to have 20px all around everywhere
+}*/

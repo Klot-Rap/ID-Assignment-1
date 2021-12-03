@@ -33,7 +33,7 @@ body{
 }
 
 .flex-item{
-    background-color: rgba(204, 2, 255, 0.4); /*now you are modifying the actual background color of the flex boxes, just now you were modifying the background color of the section*/
+    background-color: #48aaad70; /*now you are modifying the actual background color of the flex boxes, just now you were modifying the background color of the section*/
     /*note that the background color will be overriden by the * selector where you put the img as default for all background*/
     border: black 5px solid; /*this is the three values you can pass in for this parameter for the border properties*/
 

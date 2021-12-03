@@ -24,7 +24,7 @@ header{
 /*'Successes & Client's reviews'*/
 .Clients_Review{
     display:block; /*i make this title a block element so it can occupy the whole row*/
-    background-color: darkblue;
+    background-color: rgb(39, 39, 129);
 
     margin-top:-10px; /*this is to make it stick it to the nav bar*/
     padding: 40px; /*this is to make the block element bigger*/
@@ -72,7 +72,7 @@ header{
 
 /*SECTION*/
 .section1{
-    background-color: rgb(28, 28, 235);
+    background-color: #283e69;
 }
 
 
@@ -85,12 +85,11 @@ header{
 .flex_item_cert{       /*this is properties meant for all the items*/
     width:800px;
     height:250px;
-    background-color: rgba(250, 184, 195, 0.514);
 
     margin: 20px;  /*this is to ensure not all items/element is sticked tgt*/
 }
 .flex_item1_cert{    /*this is specific properties meant for the first flex item*/
-    height: 800px;
+    height: 600px;
     background-color: rgba(250, 8, 8, 0.514);
 
     color:#ffffff;
@@ -101,6 +100,7 @@ header{
 .flex_item2_cert{    /*this is specific properties meant for the first flex item*/
     color:#ffffff;
     text-align: center;
+    background-color: rgba(250, 8, 8, 0.514);
 }
 
 
@@ -112,7 +112,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    background-color: rgba(250, 8, 8, 0.322);
 }
 
 
@@ -123,7 +123,12 @@ header{
 
 /*Section 2*/
 .section2{
-    background-color: rgb(186, 89, 241);
+    background-color: #283e69;
+    
+}
+
+.section2:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across*/
+    color: #db063b;
 }
 
 .WhatsApp_logo{
