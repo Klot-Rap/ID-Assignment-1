@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Reservation</title>
 
+    <title>Online Reservation</title>
+    <link rel="stylesheet" href="Normalize.css" type="text/css">
     <link rel="stylesheet" href="Online Reservation.css" type="text/css">
 </head>
 <body>
     <header>
-        <nav><a href="index.html">Home</a>
-            <a href="#">Online Reservation</a>
-            <a href="Successes.html">Successes</a>
-            <a href="index.html#contact_us_link">Contact us</a>     <!--this is how you combine the link to bring you back to the main page while bringing you do the contact us id link-->
+        <nav>
+            <a class="nav_logo">April & Yen REAL ESTATE</a>   <!--using an anchor tag in this case than a divider tag, as an divider tag will span across the whole line-->
+
+            <!--not needed only for home page<a class="WhatsApp_logo" href="https://api.whatsapp.com/send?phone=6597460258&text=Hi,%20I%20am%20interested%20in%20the%20properties."><img src="Images\WhatsApp Icon.png" alt="WhatsApp Link" height=50px width=50px target="_blank"/> Whatsapp Me</a>-->         <!--note here i have the anchor tag to surround the img tag with a link href so when you click on it i can link to the href-->
+
+            <ul class="nav_page_links">
+                <li><a href="index.html">Home</a></li>                      <!--since this hr-ef is assing to this #, it means that it will not travese to any page neither do we want it to traverse to any page as this is the home page-->
+                <li><a href="#">Online Reservation</a></li>
+                <li><a href="Successes.html">Successes</a></li>    <!--so this will travese(bring us) to the page sucess.html-->
+                <li><a href="index.html#contact_us_link">Contact us</a></li>        <!--herf is wrongly spelled is href, which allows us to traverse to anotther page so initially we assing it to "#" as we are not traversing to another page but if you want you can assing it another value and put in the name of the .html-->
+            </ul><!--this is how you combine the link to bring you back to the main page while bringing you do the contact us id link-->
         </nav>
     </header>
 
@@ -25,36 +33,37 @@
         <li class="flex-item flex-item4"><img src="Images\Pollen & Bleu.jpg" alt="Pollen & Bleu" width = 400px height= 250px /></li>
         <li class="flex-item flex-item5"><img src="Images\Newton-Edge-Orchard-River-Valley-Singapore.jpg" alt="Newton-Edge-Orchard" width = 400px height= 250px /></li>
         <li class="flex-item flex-item6"><img src="Images\Capture (The Quayside).PNG" alt="The Quay Side" width = 400px height= 250px /></li>
-        <li class="flex-item flex-item7">7</li>
-        <li class="flex-item flex-item8">8</li>
-        <li class="flex-item flex-item9">9</li>
-        <li class="flex-item flex-item20">10</li>
+        <li class="flex-item flex-item7"><img src="Images\Pine tree Condo.jpg" alt="Pine tree" width = 400px height= 250px /></li>
+        <li class="flex-item flex-item8"><img src="Images\Capture (Forett).PNG" alt="Forett Condominum 3" width = 400px height= 250px /></li>
+        <li class="flex-item flex-item9"><img src="Images\Caspian.jpg" alt="Caspian" width = 400px height= 250px /></li>
+        <li class="flex-item flex-item20"><img src="Images\Capture (Tree House).PNG" alt="Tree House" width = 220px height= 250px /></li>
     </section>
     
-    <div class="flex-container">                      <!--a container where our fexbox items will reside in -->
-        <div class="flex-item flex-item1"><img src="Images\Capture (Tree House).PNG" alt="Tree House unit for sale" width = 308px height= 333px /></div>       <!--here you assign it to two separate class so you are able to access it individually as well-->
-        <div class="flex-item flex-item2"><img src="Images\Capture (Sims Urban Oasis).PNG" alt="Sims Urban Oasis unit for sale" width = 308px height= 333px/></div>        <!-- the purpose is flex-item can access all the items at once whereas container will access the whole block of column hence they are two different things (one is just taking care of all the container) (the other is to take care of the whole row)-->
-        <div class="flex-item flex-item3"><img src="Images\Capture (The Quayside).PNG" alt="The QuaySide unit for sale" width = 308px height= 333px/></div>
-    </div>
-
-    <footer>
+    
+    <!--footer-->
+    <footer class="common_footer">
         <a>© 2023 by April & Yen Real Estate.</a>
         
         <div>
             <a href="https://www.facebook.com/luiyenyuin" target="_blank">
-                <img  src="Images\facebook icon.png" alt="Facebook HyperLink" height= "30px" width = "30px"/>
+                <img src="Images\facebook icon.png" alt="Facebook HyperLink" height= "30px" width = "30px"/>
             </a>               <!--note alt is merely for description hence those who cannot see are able to use an applicaiton to read what the images is-->
 
             <a href="https://sg.linkedin.com/in/yen-yuin-lui-828732b?trk=people-guest_people_search-card" target="_blank">
-                <img href="#" src="Images\linkedin icon.png" alt="Linkedin HyperLink" height= "30px" width = "30px"/>           <!--therefore alt tag is for two reason one being for the visually impared to use app to read over the imgs, other is to-->
+                <img src="Images\linkedin icon.png" alt="Linkedin HyperLink" height= "30px" width = "30px"/>           <!--therefore alt tag is for two reason one being for the visually impared to use app to read over the imgs, other is to-->
             </a>
+
             <a href="https://www.instagram.com/aprillui9/?hl=en" target="_blank">
-                <img href="#" src="Images\instagram icon.png" alt="Instagram HyperLink" height= "30px" width = "30px"/>           <!--allow google and search engine to properly index your page such that theres not alot of words for google to pick up on rather just the images so when ppl search they can scan through your website and present yours, essentially easier to show up on search engines-->
+                <img src="Images\instagram icon.png" alt="Instagram HyperLink" height= "30px" width = "30px"/>           <!--allow google and search engine to properly index your page such that theres not alot of words for google to pick up on rather just the images so when ppl search they can scan through your website and present yours, essentially easier to show up on search engines-->
             </a>
+
+            <a href="https://www.youtube.com/channel/UCN4Dx8qkbFT-BlCt0_yNOtg" target="_blank">                         <!--target blank is to allow opening on another page-->
+                <img src="Images\Youtube Icon.png" alt="Youtube HyperLink" height= "30px" width = "30px"/>
+            </a>            
             <!--i also added the height and width arguments(aka attributes) to make the image smaller-->
         </div>  <!--i use the div tag here so all the icon can stay tgt and i do not have to self align each of them-->
-
         <!--note that href (hyper reference) has to be placed directly in an anchor tag to be able to work, and if you want the page to be able to open up on another page you simply use target="_blank" -->
+        <!--NOTE TO JOSHUA, the reason why i had some random underline interval below the images previously was becuase they are href hyperlink reference hence there will be underline therefore you must use styling to remove the underline "text-decoration: none;" reducees the underline below the link--><!--nevermind that is not really the problem-->
     </footer>
 
     <div class="fixed_Chatbox">CHAT WITH US</div>

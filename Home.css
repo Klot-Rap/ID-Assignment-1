@@ -22,8 +22,8 @@ header {
 }
 
 
-
-.nav_logo{
+/*NAV COMMON STYLING CAN BE FOUND IN NORMALIZE.CSS
+.nav_logo{   /*logo meaning the words A&Y Real Estate thing
     color:rgb(28, 0, 128);
     font-weight: 700;
     text-decoration: none;
@@ -31,11 +31,43 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     
-    margin: 20px;  /*to center it by pushing it to have 20px all around everywhere*/
+    margin: 20px;  /*to center it by pushing it to have 20px all around everywhere
 }
 
+nav{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar
+    
+}
+
+nav ul li{                                      /*this is solely to arrange the element in the unordered list in the nav bar
+    display:inline-block;
+
+    border:black 2px solid;
+
+    margin:10px;                               /*hence if you want to space them out you can use margin which is outside the mborder to space them out
+    /*
+    display:flex;                              //theres no need to display flex again already as the inline block already do that if you do this you will just override the previous display command
+    justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
+    
+    cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer
+}
+
+nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across
+    color: #008a90;
+}
+
+.nav_page_links{
+    margin: 15px;  /*to center it by pushing it to have 20px all around everywhere
+}*/
+
+
+
+
 .WhatsApp_logo{
-    margin: 10px;  /*to center the height by pushing it to have 20px all around everywhere*/
+    margin: 10px;  /*to center the height by pushing it to have 10px all around everywhere*/
     /*and then shift the 50px to the right using the second argument of margin*/
     /*text-decoration: none;    reducees the underline below the link*/
 }
@@ -59,11 +91,6 @@ header {
 }
 
 
-
-.nav_page_links{
-    margin: 15px;  /*to center it by pushing it to have 20px all around everywhere*/
-}
-
 .header_logo{
     position:absolute;
     top: 100px;
@@ -74,32 +101,6 @@ header {
     color:#ffffff;
     
 }
-nav{
-    background-color: lightblue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;                    /*this is to space the logo and the unordered list in the navigation bar*/
-    
-}
-
-nav ul li{                                      /*this is solely to arrange the element in the unordered list in the nav bar*/
-    display:inline-block;
-
-    border:black 2px solid;
-
-    margin:10px;                               /*hence if you want to space them out you can use margin which is outside the mborder to space them out*/
-    /*
-    display:flex;                              //theres no need to display flex again already as the inline block already do that if you do this you will just override the previous display command
-    justify-content: space-around;             //hence if you want to space them out you can use margin which is outside the mborder to space them out
-    */
-    cursor:pointer;            /*this is so whenever you hover over it it changes from a cursor to a pointer*/
-}
-
-nav ul li a:hover{               /*this is to show a color change when you hover over them, to make it simpler for them to notice what they are hovering across*/
-    color: #008a90;
-}
-
-
 
 /*header nav ul li a{                  /*here you stlye all anchor elements 
     text-decoration: none;
@@ -217,41 +218,16 @@ section{
 
 
 
-/*footer*/
-footer{
-    background-color: aquamarine;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
 
 
-
-.fixed_Chatbox{
-    display: inline-block;    /*so it will not ocuppy the space of one entire block*/
-
-    border: black 4px solid; /*this is to give it a border*/
-    border-radius: 10px;        /*this is make the border slightly curly so it will look nice*/
-
-    padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
-
-    background-color: rgb(38, 38, 148);
-    color: white;           /*this is to assign color to the text while background color assign color to the background like the padding*/
-
-
-    position:fixed;          /*so it will fixed along the viewport regardless of  how you scroll*/
-    bottom:30px;             /*note i assign 10px to it so it floats but still fixed*/
-    right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless*/
-}
 
 
 #contact_us_link{
     transition-duration: 5s;     /*this is so the transition does not immediately brings you location rather it does it slowly, creating a transition effect to bring you there slowly*/
 }/*apparently it does not work at all*/
 
+
+/*Responsive Web Design*/
 
 @media screen {
     

@@ -1,7 +1,10 @@
 /*Successes.css*/
+*{
+    padding:0;
+    margin:0;
+}/*this is super important for you to declare for every css styling page as it help to determine at the very start and override all similar commands to state that there are no empty spaces at the side or inside*/
 
-
-/*Header*/
+/*HEADER*/
 header{
     background-color: blue;
     background-image: url("Images/apple_mbs.jpg");
@@ -18,19 +21,88 @@ header{
     
 }
 
+/*'Successes & Client's reviews'*/
+.Clients_Review{
+    display:block; /*i make this title a block element so it can occupy the whole row*/
+    background-color: darkblue;
 
-/*Section 1*/
+    margin-top:-10px; /*this is to make it stick it to the nav bar*/
+    padding: 40px; /*this is to make the block element bigger*/
+    text-align: center;
+
+    color: #ffffff; /*this is to make the content(title white)*/
+}
+
+/*'WHAT OUR CLIENTS THINK'*/
+.header_client_review h2{    /*this is use to access the selector of the title(h3) inside of the div element which contains all the client reveiws and the title*/
+    display:block;             /*i make this title a block element so it can occupy the whole row, although it is already default block element is good to do this so when the phone screen becomes small this still works*/
+    text-align: center;
+
+    margin: 150px; /*this is to push it from the top title and push the reviews down and create a spacing of all 30px all around it*/
+    color: white;   /*this title i do not need background color as i want the background to be able to see the image*/
+}
+
+/*Review comments '.flex_boxes_reviews' */
+.header_client_review ul{       /*you can call it '.flex_boxes_reviews' will be better and more detailed*/
+    display:flex;              /*NOTE WHEN YOU CALL THIS IS FOR THE WHOLE BLOCK OF ul ELEMEENTS HENCE IT APPLIES TO THE WHOLE ROW NOT JUST THE UL ELEMENTS*/
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin-top: 200px;        /*this is to space from the title above*/
+}
+
+.flex-item{
+    width:250px;
+    height:250px;
+    
+    color:#ffffff;
+}
+
+
+/*Licenses & certifications*/
+.section1 h2{
+    display:block;             /*i make this title a block element so it can occupy the whole row, although it is already default block element is good to do this so when the phone screen becomes small this still works*/
+    text-align: center;
+
+    margin-top: -20px;
+    margin-bottom: 100px; /*this is to push it from the top title and push the reviews down and create a spacing of all 30px all around it*/
+    padding-top: 50px;
+    color: white;
+}
+
+/*SECTION*/
 .section1{
+    background-color: darkblue;
+}
+
+
+.flex_cert_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex_item_cert{       /*this is properties meant for all the items*/
+    width:800px;
+    height:250px;
+    background-color: pink;
+
+    margin: 20px;  /*this is to ensure not all items/element is sticked tgt*/
+}
+.flex_item1_cert{    /*this is specific properties meant for the first flex item*/
+    height: 800px;
     background-color: red;
 }
 
 
 /*Section 2*/
 .section2{
-    background-color: pink;
+    background-color: rgb(99, 91, 92);
 }
 
-/*footer*/
-footer{
-    background-color: aquamarine;
+.WhatsApp_logo{
+    display: block;
+    padding: 50px; /*to create spacing inside the block to ensure the words not sticking to the block container*/
+    text-align: center;
 }
+/*footer's styling is to be found in normalize.css*/

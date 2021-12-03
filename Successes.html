@@ -5,39 +5,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Successes page</title>
-
+    <link rel="stylesheet" href="Normalize.css" type="text/css">
     <link rel="stylesheet" href="Successes.css" type="text/css">
 
 </head>
 <body>
     <header>
-        <nav><a href="index.html">Home</a>
-            <a href="Online Reservation.html">Online Reservation</a>
-            <a href="#">Successes</a>
-            <a href="index.html#contact_us_link">Contact us</a>     <!--this is how you combine the link to bring you back to the main page while bringing you do the contact us id link-->
+        <nav>
+            <a class="nav_logo">April & Yen REAL ESTATE</a>   <!--using an anchor tag in this case than a divider tag, as an divider tag will span across the whole line-->
+
+            <!--not needed, needed only in home page<a class="WhatsApp_logo" href="https://api.whatsapp.com/send?phone=6597460258&text=Hi,%20I%20am%20interested%20in%20the%20properties."><img src="Images\WhatsApp Icon.png" alt="WhatsApp Link" height=50px width=50px target="_blank"/> Whatsapp Me</a>-->   <!--note here i have the anchor tag to surround the img tag with a link href so when you click on it i can link to the href-->
+
+            <ul class="nav_page_links">
+                <li><a href="index.html">Home</a></li>                      <!--since this hr-ef is assing to this #, it means that it will not travese to any page neither do we want it to traverse to any page as this is the home page-->
+                <li><a href="Online Reservation.html">Online Reservation</a></li>
+                <li><a href="#">Successes</a></li>    <!--so this will travese(bring us) to the page sucess.html-->
+                <li><a href="index.html#contact_us_link">Contact us</a></li>        <!--hert is wrongly spelled is href, which allows us to traverse to anotther page so initially we assing it to "#" as we are not traversing to another page but if you want you can assing it another value and put in the name of the .html-->
+            </ul><!--this is how you combine the link to bring you back to the main page while bringing you do the contact us id link-->
+
         </nav>
         
-        <div> Successes & Client's reviews </div>
+        <h1 class="Clients_Review"> Successes & Client's reviews </h1>
 
         <div class="header_client_review"> 
-            <div>WHAT OUR CLIENTS THINK</div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <h2>WHAT OUR CLIENTS THINK</h2>
+            <ul class="flex_boxes_reviews">
+                <li class="flex-item flex-item1">"I'm a testimonial.<br>Click to edit me and add text<br>that says something nice about you<br>and your services"<br> -<b>Tina & James Heart</b></li>     <!--the b tag is used to bold the content which also requires a closing bold tag-->
+                <li class="flex-item flex-item2">"I'm a testimonial.<br>Click to edit me and add text<br>that says something nice about you<br>and your services"<br> -<b>Mary van den Reich</b></li>
+                <li class="flex-item flex-item3">"I'm a testimonial.<br>Click to edit me and add text<br>that says something nice about you<br>and your services"<br> -<b>Paul & Susan Taylor</b></li>
             </ul>
         </div>
     </header>
 
     <section class="section1">
-        <div></div>
-        <div></div>
+        <h2>Licenses & certifications</h2>
+        <ul class="flex_cert_container">
+            <li class="flex_item_cert flex_item1_cert">Orange Tee</li>
+            <li class="flex_item_cert flex_item2_cert">PropNex</li>
+            <li class="flex_item_cert flex_item3_cert">Divisional</li>
+            <li class="flex_item_cert flex_item4_cert">Training & Workshops</li>
+        </ul>
+        <p>Orange Tee
+            Orange Tee         |                  Emerald Award  III                 |   2021  April<br><br><br> <!--this is to create three line spacing-->
+            Orange Tee         |                    Sapphire Award                   |   2021  Mar<br><br><br>
+            Orange Tee         |                  Emerald Award  II                  |   2021  Feb<br><br><br>
+            Orange Tee         |                  Emerald Award  I                   |   2021 Jan<br><br><br><br>
+
+            Orange Tee         |              Top 20 Achievers Award                 |   2020  Aug<br><br><br>
+            Orange Tee         |                    Sapphire Award                   |   2020 Aug<br><br><br>
+            Orange Tee         |                 Top Stellar Achievers               |   2020 July<br><br><br><br>
+
+            Orange Tee         |            Top 10% Achievers Award                  |   2019<br><br><br>
+            Orange Tee         |             Top 50 Achievers Award                  |   2019  Oct<br><br><br>
+            Orange Tee         |             Top 400 Achievers Award                 |   2018<br><br><br>
+            Orange Tee         |                   Top 50 Achievers                  |   2018 June <br><br><br><br>​
+        </p>
     </section>
 
-    <section class="section2">2</section>
+    <section class="section2">
+        <a class="WhatsApp_logo" href="https://api.whatsapp.com/send?phone=6597460258&text=Hi,%20I%20am%20interested%20in%20the%20properties.">
+            Contact us directly +65 9746 0258
+            <img src="Images\WhatsApp Icon.png" alt="WhatsApp Link" height=80px width=80px target="_blank"/>
+        </a>
+    </section>
 
-    <footer>last</footer>
+    <!--footer-->
+    <footer class="common_footer">
+        <a>© 2023 by April & Yen Real Estate.</a>
+        
+        <div>
+            <a href="https://www.facebook.com/luiyenyuin" target="_blank">
+                <img src="Images\facebook icon.png" alt="Facebook HyperLink" height= "30px" width = "30px"/>
+            </a>               <!--note alt is merely for description hence those who cannot see are able to use an applicaiton to read what the images is-->
+
+            <a href="https://sg.linkedin.com/in/yen-yuin-lui-828732b?trk=people-guest_people_search-card" target="_blank">
+                <img src="Images\linkedin icon.png" alt="Linkedin HyperLink" height= "30px" width = "30px"/>           <!--therefore alt tag is for two reason one being for the visually impared to use app to read over the imgs, other is to-->
+            </a>
+
+            <a href="https://www.instagram.com/aprillui9/?hl=en" target="_blank">
+                <img src="Images\instagram icon.png" alt="Instagram HyperLink" height= "30px" width = "30px"/>           <!--allow google and search engine to properly index your page such that theres not alot of words for google to pick up on rather just the images so when ppl search they can scan through your website and present yours, essentially easier to show up on search engines-->
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCN4Dx8qkbFT-BlCt0_yNOtg" target="_blank">                         <!--target blank is to allow opening on another page-->
+                <img src="Images\Youtube Icon.png" alt="Youtube HyperLink" height= "30px" width = "30px"/>
+            </a>            
+            <!--i also added the height and width arguments(aka attributes) to make the image smaller-->
+        </div>  <!--i use the div tag here so all the icon can stay tgt and i do not have to self align each of them-->
+        <!--note that href (hyper reference) has to be placed directly in an anchor tag to be able to work, and if you want the page to be able to open up on another page you simply use target="_blank" -->
+        <!--NOTE TO JOSHUA, the reason why i had some random underline interval below the images previously was becuase they are href hyperlink reference hence there will be underline therefore you must use styling to remove the underline "text-decoration: none;" reducees the underline below the link--><!--nevermind that is not really the problem-->
+    </footer>
+
+    <div class="fixed_Chatbox">CHAT WITH US</div>
     
 </body>
 </html>

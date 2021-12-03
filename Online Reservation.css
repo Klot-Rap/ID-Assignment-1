@@ -33,7 +33,7 @@ body{
 }
 
 .flex-item{
-    background-color: rgba(204, 2, 255, 0.7); /*now you are modifying the actual background color of the flex boxes, just now you were modifying the background color of the section*/
+    background-color: rgba(204, 2, 255, 0.4); /*now you are modifying the actual background color of the flex boxes, just now you were modifying the background color of the section*/
     /*note that the background color will be overriden by the * selector where you put the img as default for all background*/
     border: black 5px solid; /*this is the three values you can pass in for this parameter for the border properties*/
 
@@ -47,11 +47,11 @@ body{
 }
 
 
-
-
-/*footer*/
+/* The normalize.css will styles will also override all these style even so if its written
+/*footer's styling is to be found in normalize.css hence this styling below which is slightly different is unecessary already*/
+/*footer
 footer{
-    background-color: aquamarine;
+    background-color: red;
     padding: 20px;
 
     display: flex;
@@ -60,24 +60,23 @@ footer{
     
 }
 
-
-/*fixed chat box at the side*/
+/*fixed chat box at the side
 .fixed_Chatbox{
-    display: inline-block;    /*so it will not ocuppy the space of one entire block*/
+    display: inline-block;    /*so it will not ocuppy the space of one entire block
 
-    border: black 2px solid; /*this is to give it a border*/
-    border-radius: 10px;        /*this is make the border slightly curly so it will look nice*/
+    border: black 2px solid; /*this is to give it a border
+    border-radius: 10px;        /*this is make the border slightly curly so it will look nice
 
-    padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words*/
+    padding: 20px 30px; /*this is so the background is bigger if not the border will be very close to the words
 
     background-color: rgb(38, 38, 148);
-    color: white;           /*this is to assign color to the text while background color assign color to the background like the padding*/
+    color: white;           /*this is to assign color to the text while background color assign color to the background like the padding
 
 
-    position:fixed;          /*so it will fixed along the viewport regardless of  how you scroll*/
-    bottom:30px;             /*note i assign 10px to it so it floats but still fixed*/
-    right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless*/
+    position:fixed;          /*so it will fixed along the viewport regardless of  how you scroll
+    bottom:30px;             /*note i assign 10px to it so it floats but still fixed
+    right:30px;                 /*so this will fix at the bottom right of the screen when ever you scroll, regardless
 }
-
+*/
 
 
